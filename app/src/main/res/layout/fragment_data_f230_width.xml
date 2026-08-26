@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFFF"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/color000"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_serialNum"
+        android:layout_width="119dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color000">
+
+            <FrameLayout
+                android:id="@+id/videoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_corner_gray"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_corner_gray"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="测点: 1"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_num"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_corner_gray"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="5mm"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_hint_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorRed"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorRed" />
+
+            <RelativeLayout
+                android:id="@+id/rl_left"
+                android:layout_width="131dp"
+                android:layout_height="131dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="13dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_ptz_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_left_change" />
+
+                <Button
+                    android:id="@+id/btn_l_top"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_l_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_l_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_l_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_right"
+                android:layout_width="131dp"
+                android:layout_height="131dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="13dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_ptz_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_right_change" />
+
+                <Button
+                    android:id="@+id/btn_r_top"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_r_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_r_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/btn_r_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="656dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_default"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_15"
+                android:text="恢复原始数据"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_15"
+                android:text="保存"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_15"
+                android:text="手动修改"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

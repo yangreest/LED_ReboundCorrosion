@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.chird.sdk'
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 26
+        // 库模块不需要 targetSdk，由应用模块决定
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'consumer-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig false
+        resValues false
+    }
+
+    // 构建性能优化
+    packagingOptions {
+        // 排除不必要的静态库 (.a 文件不会打包进 APK)
+        jniLibs {
+            // 保留所有 .so 文件
+            keepDebugSymbols += ['**/*.so']
+        }
+    }
+}
+
+// 全局排除旧版 kotlin-stdlib-jdk7/jdk8
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:2.2.0'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.2.0'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.2.0'
+    }
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.13.0'
+}

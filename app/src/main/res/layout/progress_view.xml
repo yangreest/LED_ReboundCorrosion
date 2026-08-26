@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast"
+    android:gravity="center"
+    android:minWidth="110dp"
+    android:minHeight="55dp"
+    android:orientation="vertical"
+    android:padding="13dip">
+
+    <ProgressBar
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dip"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/anim_upload_rotate" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="7dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="160dp"
+        android:singleLine="true"
+        android:text="加载中..."
+        android:textColor="#AFAFAF"
+        android:textSize="18dip" />
+
+</LinearLayout>

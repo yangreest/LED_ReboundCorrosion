@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF2F8F8"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@color/color006F5F"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="工程信息"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="24dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:text="适用范围："
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <com.example.gtj_f230_rebound_corrosion.corrosion.view.SpinnerStaticView
+                            android:id="@+id/sp_pole_standard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv02"
+                            android:background="@drawable/bg_edittext"
+                            android:textColor="@color/color000"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="1px"
+                            android:background="@drawable/bg_pull_down_green" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="1px"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/icon_bottom" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:text="参数配置："
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_config"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/tv_manager"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/color000"
+                                android:textSize="20dp" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1px"
+                                android:layout_toLeftOf="@+id/tv_manager"
+                                android:background="@drawable/bg_pull_down_green" />
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1px"
+                                android:layout_toLeftOf="@+id/tv_manager"
+                                android:padding="6dp"
+                                android:rotation="270"
+                                android:scaleType="centerInside"
+                                android:src="@mipmap/icon_bottom" />
+
+                            <TextView
+                                android:id="@+id/tv_manager"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/bg_button_18"
+                                android:gravity="center"
+                                android:text="管理"
+                                android:textColor="@color/colorFFF"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@color/color006F5F"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="试验参数"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:text="电 杆 类 型 ："
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_pole_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/color000"
+                                android:textSize="20dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="电 杆 结 构 ："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.example.gtj_f230_rebound_corrosion.corrosion.view.SpinnerStaticView
+                                    android:id="@+id/sp_pole_structure"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_edittext"
+                                    android:textColor="@color/color000"
+                                    android:textSize="20dp" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:background="@drawable/bg_pull_down_green" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:padding="6dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/icon_bottom" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="电杆长度(L)："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <EditText
+                                android:id="@+id/et_pole_height"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="请填写"
+                                android:inputType="number|numberDecimal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color000"
+                                android:textCursorDrawable="@null"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="m"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="设计保护层厚度："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:id="@+id/tv_design_thickness"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/color000"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="mm"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="电杆根径(D)："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <EditText
+                                android:id="@+id/et_pole_bottom_diameter"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="请填写"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color000"
+                                android:textCursorDrawable="@null"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="mm"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="电杆梢径(d)："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <EditText
+                                android:id="@+id/et_pole_top_diameter"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="请填写"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color000"
+                                android:textCursorDrawable="@null"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="mm"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="纵 筋 直 径 ："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <com.example.gtj_f230_rebound_corrosion.corrosion.view.SpinnerStaticView
+                                    android:id="@+id/sp_rebar_diameter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_edittext"
+                                    android:textColor="@color/color000"
+                                    android:textSize="20dp" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:background="@drawable/bg_pull_down_green" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:padding="6dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/icon_bottom" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="mm"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="螺旋筋直径："
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <com.example.gtj_f230_rebound_corrosion.corrosion.view.SpinnerStaticView
+                                    android:id="@+id/sp_hooping_diameter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/bg_edittext"
+                                    android:textColor="@color/color000"
+                                    android:textSize="20dp" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:background="@drawable/bg_pull_down_green" />
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="1px"
+                                    android:padding="6dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/icon_bottom" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="mm"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="根纵筋数量："
+                                android:textColor="@color/color000"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/et_pole_bottom_count"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="请填写"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color000"
+                                android:textCursorDrawable="@null"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="根"
+                                android:textColor="@color/color000"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:text="梢纵筋数量："
+                                android:textColor="@color/color000"
+                                android:textSize="14dp" />
+
+                            <EditText
+                                android:id="@+id/et_pole_top_count"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_edittext"
+                                android:gravity="center_vertical"
+                                android:hint="请填写"
+                                android:inputType="number"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color000"
+                                android:textCursorDrawable="@null"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:background="@drawable/bg_edittext_gray"
+                                android:gravity="center"
+                                android:text="根"
+                                android:textColor="@color/color000"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/color006F5F"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="水泥电杆示意图"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="40dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_pole_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="366dp"
+                    android:layout_marginTop="130dp"
+                    android:background="@color/colorEEE"
+                    android:gravity="center"
+                    android:text="88"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pole_bottom_diameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="66dp"
+                    android:background="@color/colorEEE"
+                    android:gravity="center"
+                    android:text="88"
+                    android:textColor="@color/color000"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pole_top_diameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginRight="140dp"
+                    android:background="@color/colorEEE"
+                    android:gravity="center"
+                    android:text="88"
+                    android:textColor="@color/color000"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="确　　定"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取　　消"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

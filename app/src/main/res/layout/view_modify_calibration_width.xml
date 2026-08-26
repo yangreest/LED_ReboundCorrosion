@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_fillet"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:orientation="vertical"
+            android:paddingLeft="26dip"
+            android:paddingTop="26dip"
+            android:paddingRight="26dip"
+            android:paddingBottom="13dip">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color333"
+                android:textSize="22dip" />
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bg_black_hollow"
+                android:digits="-0123456789."
+                android:gravity="center_vertical"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxLength="10"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:singleLine="true"
+                android:textColor="@color/color4B92F8"
+                android:textCursorDrawable="@null"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#BABABA" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_dialog_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_dialog_left_selector"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:text="确定确定"
+                    android:textColor="@color/color_0C8B8A"
+                    android:textSize="21dip" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#BABABA" />
+
+                <Button
+                    android:id="@+id/btn_dialog_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_dialog_right_selector"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:text="取消"
+                    android:textColor="@color/color_0C8B8A"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_dialog_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_dialog_ok_selector"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="取消"
+                android:textColor="@color/color_0C8B8A"
+                android:textSize="21dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

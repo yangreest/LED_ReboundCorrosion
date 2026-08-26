@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="13dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@color/color006F5F"
+                android:gravity="center_vertical"
+                android:paddingLeft="11px"
+                android:text="设备连接"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="无线裂缝测宽仪"
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_f230_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:gravity="center"
+                    android:textColor="@color/color006F5F"
+                    android:textSize="21dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="11dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_f230_connect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="连接设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+
+                    <Button
+                        android:id="@+id/btn_f230_calibration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="校准设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorCCC" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="全自动一体回弹仪设备"
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_rebound_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:gravity="center"
+                    android:textColor="@color/color006F5F"
+                    android:textSize="21dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="11dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_rebound_connect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="连接设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+
+                    <Button
+                        android:id="@+id/btn_rebound_printer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="连接打印机"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_rebound_calibration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="校准设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorCCC" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:text="混凝土电杆钢筋锈蚀检测仪"
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_corrosion_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:gravity="center"
+                    android:textColor="@color/color006F5F"
+                    android:textSize="21dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="11dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_corrosion_connect"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="连接设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+
+                    <Button
+                        android:id="@+id/btn_corrosion_calibration"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="校准设备"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+
+                    <Button
+                        android:id="@+id/btn_jiliang"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button_15"
+                        android:gravity="center"
+                        android:text="计量"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="21dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@color/color006F5F"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="11dp"
+                        android:text="系统语言"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp">
+
+                        <TextView
+                            android:id="@+id/tv_lan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="语言选择："
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <EditText
+                            android:id="@+id/et_language"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_lan"
+                            android:background="@drawable/bg_edittext"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="请选择"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:singleLine="true"
+                            android:text="简体中文"
+                            android:textColor="@color/color000"
+                            android:textCursorDrawable="@null"
+                            android:textSize="21dp" />
+
+                        <ImageView
+                            android:layout_width="37dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="1px"
+                            android:background="@drawable/bg_button_up_15_right"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@mipmap/icon_bottom" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@color/color006F5F"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="界面设置"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="39dp"
+                        android:paddingRight="39dp">
+
+                        <TextView
+                            android:id="@+id/tv_theme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="界面主题："
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/icon_single_selected" />
+
+                        <TextView
+                            android:id="@+id/tv_light_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:text="浅色"
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:src="@mipmap/icon_single_unselected" />
+
+                        <TextView
+                            android:id="@+id/tv_dark_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="12dp"
+                            android:gravity="center_vertical"
+                            android:text="深色"
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="@color/colorFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:background="@color/color006F5F"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="关于我们"
+                    android:textColor="@color/colorFFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_version1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:gravity="center_vertical"
+                            android:text="V:1.0"
+                            android:textColor="@color/color000"
+                            android:textSize="21dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_about_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorFFF"
+                            android:orientation="vertical"
+                            android:paddingLeft="26dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:text="公司信息"
+                                android:textColor="@color/color006F5F"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="武汉立尔达数智检测科技有限公司"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="官网：https://www.wuhanlierda.com"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:text="返修信息"
+                                android:textColor="@color/color006F5F"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="收件人：售后服务"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="电话：027-87180968"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="返修地址：湖北省武汉市东湖新技术开发区光谷大道70号2幢C307"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:text="温馨提示"
+                                android:textColor="@color/color006F5F"
+                                android:textSize="24dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="尊敬的客户您好！感谢您使用武汉立尔达智检仪器，给您带来的不便敬请谅解。设备邮寄返修时，请做好防护，避免运输造成损坏。请将设备的使用问题及设备回寄时的客户信息写在纸上，随设备一起寄回，收到设备后，我们的工作人员会第一时间与您联系，谢谢！"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+
+                            <TextView
+                                android:id="@+id/tv_version2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:text="V:1.0"
+                                android:textColor="@color/color000"
+                                android:textSize="21dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="软件升级"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>

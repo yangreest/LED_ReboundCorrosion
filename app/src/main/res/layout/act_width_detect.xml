@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="13dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="构件信息"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="构件编号："
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="构件备注："
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="当前测点："
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/tv_jcd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_05"
+                    android:gravity="center_vertical"
+                    android:text="5"
+                    android:textColor="@color/color333"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_confirm"
+                android:layout_width="158dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/bg_button_30"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/icon_photo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="拍照"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorFFF"
+                    android:textSize="29dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_weight="2.7"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="检测数据"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_detect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="656dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/color000">
+
+                    <FrameLayout
+                        android:id="@+id/VideoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextClock
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/bg_corner_gray"
+                        android:format12Hour="yyyy-MM-dd hh:mm:ss"
+                        android:format24Hour="yyyy-MM-dd hh:mm:ss"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_time"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/bg_corner_gray"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:text="测点: 1"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_width"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_num"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/bg_corner_gray"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:text="5mm"
+                        android:textColor="@color/colorFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/colorRed"
+                        android:textSize="21dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorRed" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_hint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="请将裂缝垂直穿过中间红线"
+                    android:textColor="@color/colorRed"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_serialNum"
+                    android:layout_width="119dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_data_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/color000">
+
+                        <FrameLayout
+                            android:id="@+id/VideoLayout_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/tv_time_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/bg_corner_gray"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:textColor="@color/colorFFF"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_num_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_time_data"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_corner_gray"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="测点: 1"
+                            android:textColor="@color/colorFFF"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_width_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_num_data"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/bg_corner_gray"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:text="5mm"
+                            android:textColor="@color/colorFFF"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tv_hint_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/colorRed"
+                            android:textSize="21dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorRed" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="13dp"
+                        android:gravity="center"
+                        android:src="@mipmap/icon_delete" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="13dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="已存测点"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

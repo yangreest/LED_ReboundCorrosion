@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF2F8F8"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="工程列表"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_project"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1px"
+                android:layout_marginTop="1px"
+                android:layout_marginRight="1px"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="构件列表"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_zone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1px"
+                android:layout_marginTop="1px"
+                android:layout_marginRight="1px"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="基本信息"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="28dp"
+                android:lineSpacingExtra="13dp"
+                android:textColor="@color/color000"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="13dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="打　　开"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="上　　传"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="导　　出"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="删　　除"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_18"
+            android:gravity="center"
+            android:text="返　　回"
+            android:textColor="@color/colorFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_multiple_unselected" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="回款信息处理回款信息处理回款信息处理回款信息处理"
+            android:textColor="@color/color333"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="基础信息：基础信息1"
+        android:textColor="@color/color999"
+        android:textSize="21dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorCCC" />
+</LinearLayout>

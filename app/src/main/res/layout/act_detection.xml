@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/theme_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:text="工程信息"
+        android:textColor="@color/colorFFF"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/colorFFF"
+        android:orientation="horizontal"
+        android:padding="13dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_p"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="工程名称："
+                android:textColor="@color/color000"
+                android:textSize="21dp" />
+
+            <com.example.gtj_f230_rebound_corrosion.corrosion.view.SpinnerStaticView
+                android:id="@+id/sp_project"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@+id/tv_new"
+                android:layout_toRightOf="@+id/tv_p"
+                android:background="@drawable/bg_edittext"
+                android:textColor="@color/color000"
+                android:textSize="21dp" />
+
+            <ImageView
+                android:id="@+id/iv_project"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/sp_project"
+                android:layout_margin="1px"
+                android:background="@drawable/bg_button_up_15_right"
+                android:padding="9dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_bottom" />
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_button_15"
+                android:gravity="center"
+                android:text="新建工程"
+                android:textColor="@color/colorFFF"
+                android:textSize="21dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="26dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="right|center_vertical"
+                android:text="构件编号："
+                android:textColor="@color/color333"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="738dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:singleLine="true"
+                android:textColor="@color/color333"
+                android:textCursorDrawable="@null"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/tv_jia"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/tv_jian"
+                android:background="@drawable/bg_button_15"
+                android:gravity="center"
+                android:text="＋"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_jian"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_button_15"
+                android:gravity="center"
+                android:text="－"
+                android:textColor="@color/colorFFF"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/colorFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="right|center_vertical"
+                android:text="工程地址："
+                android:textColor="@color/color333"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择工程"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:singleLine="true"
+                android:textColor="@color/color333"
+                android:textCursorDrawable="@null"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:gravity="right|center_vertical"
+                android:text="构建备注："
+                android:textColor="@color/color333"
+                android:textSize="21dp" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="请输入"
+                android:maxLength="30"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:singleLine="true"
+                android:textColor="@color/color333"
+                android:textCursorDrawable="@null"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="13dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical"
+            android:paddingBottom="13dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="缝宽检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_f230_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="测点数："
+                    android:textColor="@color/color000"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_f230_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已存测点"
+                    android:textColor="@color/theme_color"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_f230"
+                android:layout_width="158dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_up_30"
+                android:text="开始检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="29dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_f230_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:textSize="21dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical"
+            android:paddingBottom="13dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="回弹检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_rebound_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="测点数："
+                    android:textColor="@color/color000"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_rebound_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已存测点"
+                    android:textColor="@color/theme_color"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_rebound"
+                android:layout_width="158dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_30"
+                android:text="开始检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="29dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_rebound_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:textSize="21dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical"
+            android:paddingBottom="13dp">
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="锈蚀检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_corrosion_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="测点数："
+                    android:textColor="@color/color000"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/tv_corrosion_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已存测点"
+                    android:textColor="@color/theme_color"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_corrosion"
+                android:layout_width="158dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_30"
+                android:text="开始检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="29dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_corrosion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:textSize="21dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bg_button_18"
+        android:gravity="center"
+        android:text="返　　回"
+        android:textColor="@color/colorFFF"
+        android:textSize="22dp" />
+</LinearLayout>

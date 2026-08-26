@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/theme_color">
+
+            <com.example.gtj_f230_rebound_corrosion.corrosion.view.DiagonalLineView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:text="检测\n结果"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="7dp"
+                android:text="测点\n数量"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color8E8E8E" />
+
+            <View
+                android:id="@+id/v_c"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/v_c"
+                android:layout_alignParentRight="true"
+                android:background="@color/color8E8E8E" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/v_c"
+                android:layout_alignParentRight="true"
+                android:background="@color/color8E8E8E" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="主筋锈蚀度检测"
+                android:textColor="@color/colorFFF"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color8E8E8E" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorD8D8D8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_grid_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="距离根部(m)"
+                    android:textColor="@color/theme_color"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="实测直径(mm)"
+                    android:textColor="@color/theme_color"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="实测截面积(mm²)"
+                    android:textColor="@color/theme_color"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="纵筋锈蚀度(%)"
+                    android:textColor="@color/theme_color"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color8E8E8E" />
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color8E8E8E" />
+
+            <TextView
+                android:id="@+id/tv_grid_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color006F5F"
+                android:textSize="16dp"
+                tools:text="距根部\n13m" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/color8E8E8E" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_grid_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="1" />
+
+                <View
+                    android:id="@+id/v_grid_1"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="2" />
+
+                <View
+                    android:id="@+id/v_grid_2"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="3" />
+
+                <View
+                    android:id="@+id/v_grid_3"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="4" />
+
+                <View
+                    android:id="@+id/v_grid_4"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="5" />
+
+                <View
+                    android:id="@+id/v_grid_5"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="6" />
+
+                <View
+                    android:id="@+id/v_grid_6"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="7" />
+
+                <View
+                    android:id="@+id/v_grid_7"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="8" />
+
+                <View
+                    android:id="@+id/v_grid_8"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="9" />
+
+                <View
+                    android:id="@+id/v_grid_9"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="10" />
+
+                <View
+                    android:id="@+id/v_grid_10"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+
+                <TextView
+                    android:id="@+id/tv_grid_average"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/color000"
+                    android:textSize="16dp"
+                    tools:text="10" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color8E8E8E" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color8E8E8E" />
+</LinearLayout>

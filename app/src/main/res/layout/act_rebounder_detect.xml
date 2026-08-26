@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="13dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="参数设置"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="检测依据："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_jcyj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_13"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择"
+                    android:inputType="number"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="是否泵送："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_sfbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_11"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择"
+                    android:inputType="number"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_jjm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="浇  筑  面："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_jjm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_20"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="检  测  面："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_jcm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_03"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择检测面"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+                <TextView
+                    android:id="@+id/tv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="角        度："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_jd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_06"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择角度"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp">
+
+                <TextView
+                    android:id="@+id/tv_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:text="标准碳化："
+                    android:textColor="@color/color333"
+                    android:textSize="21dp" />
+
+                <EditText
+                    android:id="@+id/et_bzth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_16"
+                    android:background="@drawable/bg_edittext"
+                    android:focusable="false"
+                    android:hint="请选择标准碳化"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color333"
+                    android:textCursorDrawable="@null"
+                    android:textSize="21dp" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_button_up_15_right"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_bottom" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="2"
+            android:background="@color/colorFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@color/theme_color"
+                android:gravity="center"
+                android:text="检测数据"
+                android:textColor="@color/colorFFF"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_serialNum"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_data"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:overScrollMode="never"
+                    android:paddingLeft="60dp"
+                    android:paddingTop="12dp"
+                    android:paddingRight="60dp"
+                    android:paddingBottom="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bg_button_18"
+        android:gravity="center"
+        android:text="返　　回"
+        android:textColor="@color/colorFFF"
+        android:textSize="22dp" />
+</LinearLayout>

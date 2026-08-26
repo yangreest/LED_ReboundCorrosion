@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.example.gtj_f230_rebound_corrosion.base.view.TitleBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="98" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigationBar"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/theme_color"
+        android:textSize="53dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="96" />
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="167" />
+
+        <ImageView
+            android:id="@+id/iv_testing"
+            android:layout_width="236dp"
+            android:layout_height="184dp"
+            android:background="@drawable/btn_testing_selector" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="109" />
+
+        <ImageView
+            android:id="@+id/iv_data"
+            android:layout_width="236dp"
+            android:layout_height="184dp"
+            android:background="@drawable/btn_data_selector" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="109" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="236dp"
+            android:layout_height="184dp"
+            android:background="@drawable/btn_setting_selector" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="167" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="167" />
+
+        <TextView
+            android:id="@+id/tv_testing"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开始检测"
+            android:textColor="@color/theme_color"
+            android:textSize="39dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="109" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="数据管理"
+            android:textColor="@color/theme_color"
+            android:textSize="39dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="109" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="系统设置"
+            android:textColor="@color/theme_color"
+            android:textSize="39dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="167" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="212" />
+</LinearLayout>

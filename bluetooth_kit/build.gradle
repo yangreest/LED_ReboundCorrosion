@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.inuker.bluetooth.library'
+    compileSdk 35
+
+    buildFeatures {
+        aidl true
+    }
+
+    defaultConfig {
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// 生成 JAR 包的 Task
+task generateJar(type: Jar, dependsOn: ['compileDebugJavaWithJavac']) {
+    group = 'build'
+    description = 'Generates a JAR file for the bluetooth_kit library'
+    
+    // 设置 JAR 文件名
+    archiveFileName.set('bluetooth_kit.jar')
+    
+    // 包含编译后的 class 文件
+    from fileTree(dir: "${project.buildDir}/intermediates/javac/debug/compileDebugJavaWithJavac/classes", include: '**/*.class')
+    
+    // 排除 BuildConfig 和 R 文件
+    exclude '**/BuildConfig.class'
+    exclude '**/BuildConfig\$*.class'
+    exclude '**/R.class'
+    exclude '**/R\$*.class'
+}
+
+// 生成 JAR 包（Release 版本）
+task generateReleaseJar(type: Jar, dependsOn: ['compileReleaseJavaWithJavac']) {
+    group = 'build'
+    description = 'Generates a release JAR file for the bluetooth_kit library'
+    
+    archiveFileName.set('bluetooth_kit_release.jar')
+    
+    from fileTree(dir: "${project.buildDir}/intermediates/javac/release/compileReleaseJavaWithJavac/classes", include: '**/*.class')
+    
+    exclude '**/BuildConfig.class'
+    exclude '**/BuildConfig\$*.class'
+    exclude '**/R.class'
+    exclude '**/R\$*.class'
+}
