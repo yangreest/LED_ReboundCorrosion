@@ -741,11 +741,11 @@ public class CorrosionDetectActivity2 extends BaseActivity<ActDetect1Binding> {
      */
     private static double[] getFitParam(int cover) {
         return switch (cover) {
-            case 15 -> new double[]{0.4901, -1.0150, 1.0044, 76.7};
-            case 18 -> new double[]{0.6480, -1.0870, 1.0913, 69.0};
-            case 20 -> new double[]{1.1267, -1.2739, 0.9823, 80.0};
-            case 22 -> new double[]{0.3963, -0.8219, 1.0372, 73.3};
-            case 25 -> new double[]{0.9619, -1.2793, 1.0963, 69.0};
+            case 15 -> new double[]{4.1367, -7.4025, 3.5040, 80};
+            case 18 -> new double[]{-4.4149, 6.2598, -1.8357, 69.0};
+            case 20 -> new double[]{3.0966, -5.7928, 2.8473, 80.0};
+            case 22 -> new double[]{4.6910, -9.5166, 4.9342, 70.0};
+            case 25 -> new double[]{-4.7969, 6.9772, -2.1541, 65.5};
             default -> throw new IllegalArgumentException("无效保护层厚度:" + cover);
         };
     }
@@ -1304,7 +1304,7 @@ public class CorrosionDetectActivity2 extends BaseActivity<ActDetect1Binding> {
         //
         dataProcessorHandler.post(() -> {
             refreshGrid();// 刷新钢筋列表
-            //binding.tvResult.setText(sbd);
+            binding.tvResult.setText(sbd);
             if (!StaticConstant.isRelease) {
                 //binding.tvResult.setText(corrosionBean.toString());
                 StyleAlertDialog2 styleAlertDialog = new StyleAlertDialog2(this);

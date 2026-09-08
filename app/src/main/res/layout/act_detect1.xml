@@ -634,6 +634,7 @@
             android:background="@drawable/bg_button_18"
             android:text="加载临时数据"
             android:textColor="@color/colorFFF"
+            android:visibility="gone"
             android:textSize="22dp" />
 
         <Button
